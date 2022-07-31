@@ -10,7 +10,7 @@ class Main extends Component {
   }
   fetchAdvice = () => {
     axios
-      .get("	https://api.adviceslip.com/advice")
+      .get("https://api.adviceslip.com/advice")
       .then((res) => {
         const { advice } = res.data.slip;
         this.setState({ advice: advice });
